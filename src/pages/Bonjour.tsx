@@ -1,37 +1,10 @@
-import React, { useState, useEffect, useRef } from 'react';
 import ImageCycler from "../components/ImageCycler.tsx";
 import ThreeColumnLayout from "../components/ThreeColumnLayout.tsx";
 
 
 const Bonjour: React.FC = () => {
-    const [count, setCount] = useState(0);
-    const containerRef = useRef<HTMLDivElement>(null);
 
-    const images: string[] = [
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/philtrum_01%400.3x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/philtrum_02%400.33x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/philtrum_03%400.33x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/philtrum_04%400.3x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/philtrum_05%400.3x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/philtrum_06%400.3x.jpg",
-    ];
 
-    const images2: string[] = [
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/edie+exhib+cover+photos/somatic-attunement_01.png",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/somatic-attunement02%400.25x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/somatic-attunement03%400.2x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/somatic-attunement04%400.2x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/somatic-attunement05%400.2x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/somatic-attunement06%400.2x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/somatic-attunement07%400.2x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/somatic-attunement08%400.2x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/somatic-attunement09%400.2x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/somatic-attunement10%400.2x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/somatic-attunement11%400.2x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/somatic-attunement12%400.2x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/somatic-attunement13%400.2x.jpg",
-        "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/somatic-attunement14%400.25x.jpg",
-    ];
 
     const jxuimages: string[] = [
         "https://edie-xu-portfolio.s3.us-east-2.amazonaws.com/photos/jxu/design.jpeg",
