@@ -29,6 +29,7 @@ a:hover {
 body {
   margin: 0;
   width: 100%;
+  padding: 0;
   display: flex;
   scroll-behavior: smooth;
   align-content: center;
