@@ -36,14 +36,11 @@ const Bonjour: React.FC = () => {
     // }, []);
 
     return (
-        <div className="h-screen w-screen bg-white flex items-center overflow-y-hidden  flex-col relative">
-            {/*<InteractiveGradient count={count} />*/}
-
-            <div className="flex mx-4  max-h-[60vh] max-w-screen-md pt-3 mb-4 ">
-                <ImageCycler images={jxuimages} interval={1424} />
+        <div className="min-h-screen w-full bg-white flex items-center justify-center overflow-hidden flex-col">
+            <div className="flex mx-4 max-h-[60vh] max-w-screen-md w-full mb-4">
+                <ImageCycler images={jxuimages} interval={1424}/>
             </div>
-            <ThreeColumnLayout />
-
+            <ThreeColumnLayout/>
         </div>
     );
 };
