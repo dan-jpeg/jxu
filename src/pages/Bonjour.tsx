@@ -36,7 +36,7 @@ const Bonjour: React.FC = () => {
     // }, []);
 
     return (
-        <div className="  min-h-[70vh] md:min-h-screen w-full bg-white flex items-center justify-center overflow-hidden flex-col">
+        <div className="  min-h-screen md:min-h-screen w-full bg-white flex items-center justify-center overflow-hidden flex-col">
             <div className="flex mx-4 max-h-[60vh] md:max-h-[60vh] max-w-screen-md w-full mb-4">
                 <ImageCycler images={jxuimages} interval={1424}/>
             </div>
