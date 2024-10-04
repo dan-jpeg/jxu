@@ -24,8 +24,14 @@ const ThreeColumnLayout: React.FC = () => {
             <div className="w-full h-px bg-gray-200 my-2"/>
             <div className="grid grid-cols-3 gap-4">
                 <div className="text-left">
-                  <a className="text-neutral-700 font-normal text-xs hover:italic hover:text-neutral-300" href="https://www.instagram.com/jingyix_">@jingyix_ </a>
-
+                    <a
+                        className="text-neutral-700 font-normal text-xs hover:italic hover:text-neutral-300"
+                        href="https://www.instagram.com/jingyix_"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        @jingyix_
+                    </a>
                 </div>
                 <div className="text-center">Archive</div>
                 <div className="text-right">1 444 222 444</div>
