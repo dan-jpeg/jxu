@@ -11,8 +11,8 @@ const ThreeColumnLayout: React.FC = () => {
                 <div className="text-left overflow-hidden whitespace-nowrap">
                     <div className="inline-flex animate-scroll">
                         {/* Repeated text */}
-                        {[...Array(12)].map((_, i) => (
-                            <span key={i} className="mr-8">
+                        {[...Array(14)].map((_, i) => (
+                            <span key={i} className="mr-8 italic">
                         jing yi xu is an artist and fashion designer based in new york city
                     </span>
                         ))}
