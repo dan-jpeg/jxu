@@ -19,7 +19,14 @@ const ThreeColumnLayout: React.FC = () => {
                     </div>
                 </div>
                 <div className="text-center">Information</div>
-                <div className="text-right">mail</div>
+                <div className="text-right">
+                    <a
+                        href="mailto:jinnix24@gmail.com"
+                        className="text-neutral-700 font-normal text-xs hover:italic hover:text-neutral-300"
+                    >
+                        email
+                    </a>
+                </div>
             </div>
             <div className="w-full h-px bg-gray-200 my-2"/>
             <div className="grid grid-cols-3 gap-4">
@@ -34,7 +41,7 @@ const ThreeColumnLayout: React.FC = () => {
                     </a>
                 </div>
                 <div className="text-center">Archive</div>
-                <div className="text-right">1 444 222 444</div>
+                <div className="text-right">1 347 327 2418</div>
             </div>
             <div className="w-full h-px bg-gray-200 my-2"/>
         </div>
