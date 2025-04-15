@@ -17,7 +17,7 @@ const ThreeColumnLayout: React.FC = () => {
             {/* Corrected the bg class */}
             <div className="grid grid-cols-3 gap-4">
                 <div className="text-left overflow-hidden whitespace-nowrap">
-                    <div className="inline-flex animate-scroll">
+                    <div className="inline-flex animate-scroll hover:[animation-play-state:paused]">
                         {/* Repeated text */}
                         {[...Array(14)].map((_, i) => (
                             <span key={i} className="mr-8 italic">
@@ -57,7 +57,7 @@ const ThreeColumnLayout: React.FC = () => {
                         @jingyix_
                     </a>
                 </div>
-                <div className="text-center">Archive</div>
+                <div className="text-center hover:line-through cursor-pointer">Archive</div>
                 <div className="text-right">1 347 327 2418</div>
             </div>
             <div className="w-full h-px bg-gray-200 my-2"/>
