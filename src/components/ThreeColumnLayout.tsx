@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ThreeColumnLayout: React.FC = () => {
+    const [copied, setCopied] = useState(false);
+
+    const handleCopyEmail = () => {
+        navigator.clipboard.writeText('jinnix24@gmail.com');
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
+    };
+
     return (
         <div
             className="w-full max-w-screen-md mx-auto px-4 py-2 text-xs lowercase text-gray-700 font-sans font-light bg-white">
@@ -20,12 +28,12 @@ const ThreeColumnLayout: React.FC = () => {
                 </div>
                 <div className="text-center">Information</div>
                 <div className="text-right">
-                    <a
-                        href="mailto:jinnix24@gmail.com"
-                        className="text-neutral-700 font-normal text-xs hover:italic hover:text-neutral-300"
+                    <button
+                        onClick={handleCopyEmail}
+                        className={` ${copied ? 'italic' : '' } text-neutral-700 font-normal text-xs hover:italic hover:text-neutral-300 focus:outline-none`}
                     >
-                        mail
-                    </a>
+                        {copied ? 'email has been copied to clipboard' : 'mail'}
+                    </button>
                 </div>
             </div>
             <div className="w-full h-px bg-gray-200 my-2"/>
