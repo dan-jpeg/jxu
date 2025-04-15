@@ -26,7 +26,16 @@ const ThreeColumnLayout: React.FC = () => {
                         ))}
                     </div>
                 </div>
-                <div className="text-center">Information</div>
+                <div className="text-center">
+                    <a
+                        href="/jinnixu_apr2025.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-neutral-700 font-normal text-xs hover:italic hover:text-neutral-300"
+                    >
+                        information
+                    </a>
+                </div>
                 <div className="text-right">
                     <button
                         onClick={handleCopyEmail}
