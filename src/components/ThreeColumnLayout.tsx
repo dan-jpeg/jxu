@@ -24,7 +24,7 @@ const ThreeColumnLayout: React.FC = () => {
                         href="mailto:jinnix24@gmail.com"
                         className="text-neutral-700 font-normal text-xs hover:italic hover:text-neutral-300"
                     >
-                        email
+                        mail
                     </a>
                 </div>
             </div>
